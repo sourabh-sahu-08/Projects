@@ -1,0 +1,255 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0b0c10;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f2833;
+  padding: 1rem 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #66fcf1;
+}
+
+.logo span {
+  color: #45a29e;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 2rem;
+}
+
+.nav-links a {
+  color: #c5c6c7;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #66fcf1;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url(https://imgs.search.brave.com/gSXvCToXLUBo_UNl3vYKqcTYQvhOIVcbaATIbOiBeZU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQy/MjI3Njc0MC92ZWN0/b3Ivc29mdHdhcmUt/ZGV2ZWxvcGVyLWZs/YXQtZGVzaWduLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz12/R0VGQ0Y0UEFFd0k3/Nmo5T1VwM1NBWmV3/TS15MkoyVVh3ZUVO/LTFuYjRFPQ) center/cover;
+  flex-direction: column;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #66fcf1;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px #45a29e;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.hero span {
+  color: #66fcf1;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  color: #c5c6c7;
+}
+
+.hero p {
+  margin: 1rem 0 2rem;
+  color: #bbb;
+}
+
+.btn {
+  background: #45a29e;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #66fcf1;
+  color: #000;
+}
+
+/* About Section */
+.about {
+  padding: 4rem 2rem;
+  background: #1f2833;
+  text-align: center;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.about img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 1rem;
+  border: 3px solid #66fcf1;
+  box-shadow: 0 0 15px #45a29e;
+}
+
+.about-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+.skills {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #0b0c10;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.skill {
+  background: #1f2833;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  color: #66fcf1;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.skill:hover {
+  background: #45a29e;
+  color: #000;
+}
+
+
+.projects {
+  padding: 4rem 2rem;
+  background: #1f2833;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: #0b0c10;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  margin: 1rem 0 0.5rem;
+  color: #66fcf1;
+}
+
+.contact {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #0b0c10;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  background: #1f2833;
+  color: #fff;
+}
+
+.contact-form button {
+  background: #45a29e;
+  border: none;
+  color: #fff;
+  padding: 0.75rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #66fcf1;
+  color: #000;
+}
+
+/* Footer */
+footer {
+  background: #1f2833;
+  text-align: center;
+  padding: 1rem;
+  color: #c5c6c7;
+}
